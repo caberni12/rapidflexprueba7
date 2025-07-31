@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RapidFlex - Entregas de Última Milla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="estilos.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Splash Loading -->
+  <div id="splash" class="splash">
+    <div class="loader-splash"></div>
+  </div>
+
+  <header>
+    <nav>
+      <div class="nav-logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <!-- Hamburger menu for mobile -->
+      <button class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <!-- Regular Nav Links -->
+      <div class="nav-links">
+        <a href="#">Servicios</a>
+        <a href="javascript:void(0)" class="btn-cotiza" onclick="openModal('modalEmpresa')">Quiero despachar</a>
+        <a href="javascript:void(0)" onclick="openModal('modalRepartidor')">Quiero ser repartidor</a>
+        <a href="#">Nosotros</a>
+      </div>
+      <!-- Slider Menu -->
+      <div id="sliderMenu" class="slider-menu">
+        <a href="#">Servicios</a>
+        <a href="javascript:void(0)" class="btn-cotiza" onclick="openModal('modalEmpresa')">Quiero despachar</a>
+        <a href="javascript:void(0)" onclick="openModal('modalRepartidor')">Quiero ser repartidor</a>
+        <a href="#">Nosotros</a>
+      </div>
+    </nav>
+
+    <div class="hero-text">
+      <h1>Somos tu aliado en entregas de última milla</h1>
+      <p>Entregas Same Day, Envíos Flex de <br>
+        Mercado Libre y más.</p>
+      <a href="javascript:void(0)" class="btn-cotiza" onclick="openModal('modalEmpresa')">Contáctanos</a>
+    </div>
+  </header>
+
+  <section class="servicios">
+    <div class="servicio">
+      <img src="tiempo.png" alt="Entrega Flex" />
+      <h2>Entrega Flex</h2>
+      <p>Recibe hoy mismo. Tus pedidos entregados en menos de 24 horas.</p>
+    </div>
+    <div class="servicio">
+      <img src="rayo.png" alt="Entrega Turbo" />
+      <h2>Entrega Turbo</h2>
+      <p>Máxima velocidad. Despachos prioritarios y urgentes, siempre a tiempo.</p>
+    </div>
+    <div class="servicio">
+      <img src="local.png" alt="Retiro en tienda" />
+      <h2>Retiro en tienda</h2>
+      <p>Puntos estratégicos para facilitar tu logística. Tú eliges dónde retirar.</p>
+    </div>
+  </section>
+
+  <section class="seccion-telefono">
+    <div class="contenido-telefono">
+      <h2>Seguimiento para tus envíos</h2>
+      <div>
+        <p>
+          Con nuestra plataforma de seguimiento en 
+          <span class="destacar"><strong>tiempo real</strong></span>, ves cada<br>
+          movimiento de tu pedido: desde la recogida hasta la entrega final.
+        </p>
+      </div>
+      <div class="item-con-icono">
+        <img class="icono" src="localizacion.png" alt="Localizacion">
+        <p>Geolocalización precisa del recorrido del paquete</p>
+      </div>
+      <div class="item-con-icono">
+        <img class="icono" src="etapas.png" alt="Etapas">
+        <p>Actualización de cada etapa</p>
+      </div>
+      <div class="item-con-icono">
+        <img class="icono" src="integracion.png" alt="Integración">
+        <p>Integración directa con Mercado Libre</p>
+      </div>
+    </div>
+    <div class="imagen-telefono">
+      <img src="telefono-mapa.png" alt="Teléfono">
+    </div>
+  </section>
+
+  <section class="seccion-seguridad">
+    <div class="contenido-seguridad">
+      <h2>Tu tranquilidad garantizada</h2>
+      <div>
+        <p>
+          <span class="linea1">En Rapid Flex <strong>cuidamos cada entrega como propia.</strong></span>
+          <span class="linea2">Si algo no sale bien, cuentas con nuestro respaldo inmediato.</span>
+        </p>
+      </div>
+      <div class="item-con-icono">
+        <img class="icono" src="peso.png" alt="Reembolso asegurado">
+        <p>Reembolso asegurado hasta $100.000 en máximo 5 días hábiles</p>
+      </div>
+      <div class="item-con-icono">
+        <img class="icono" src="humano.png" alt="Atención humana">
+        <p>Atención humana directa ante imprevistos</p>
+      </div>
+    </div>
+    <div class="imagen-cajas">
+      <img src="cajas-seguras.png" alt="Cajas protegidas" />
+    </div>
+  </section>
+
+  <section class="seccion-marketplaces">
+    <h2>¿Vendes en estos marketplaces?</h2>
+    <h3>¡Entregamos por ti!</h3>
+    <p>Integramos Rapid Flex con tus canales de venta favoritos para que entregues más rápido, sin complicarte.</p>
+  </section>
+
+  <section class="seccion-integraciones">
+    <div class="integraciones-container">
+      <button class="integracion-btn"><img src="mercadolibre.png" alt="Mercado Libre"></button>
+      <button class="integracion-btn"><img src="shopify.png" alt="Shopify"></button>
+      <button class="integracion-btn"><img src="walmart.png" alt="walmart"></button>
+      <button class="integracion-btn"><img src="ripley.png" alt="Riplay"></button>
+      <button class="integracion-btn"><img src="falabella.png" alt="falabella"></button>
+      <button class="integracion-btn"><img src="jumpseller.png" alt="jumpseller"></button>
+      <button class="integracion-btn"><img src="paris.png" alt="paris"></button>
+    </div>
+  </section>
+
+  <footer>
+    RapidFlex &copy; 2025 - Todos los derechos reservados
+    <div class="redes-sociales">
+      <a href="https://www.instagram.com/rapidflex.flex/" target="_blank"><img src="instagram.png" alt="Instagram" /></a>
+      <a href="https://www.tiktok.com/@rapid.flex" target="_blank"><img src="tiktok.png" alt="TikTok" /></a>
+      <a href="https://www.facebook.com/profile.php?id=61577021292544" target="_blank"><img src="facebook.png" alt="Facebook" /></a>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/56949399570?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="whatsapp-float" title="Escríbenos por WhatsApp">
+    <img src="Whatsapapp.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Modal Cotiza -->
+  <div id="modalEmpresa" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modalEmpresa')">&times;</span>
+      <h2>Cotización</h2>
+      <form id="empresaForm">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="telefono" placeholder="Teléfono" required>
+        <textarea name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+        <input type="hidden" name="status" value="Nuevo">
+        <button type="submit">Enviar</button>
+        <div class="loader" id="loaderEmpresa"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Repartidor -->
+  <div id="modalRepartidor" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modalRepartidor')">&times;</span>
+      <h2>Registro Repartidor</h2>
+      <form id="repartidorForm">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="telefono" placeholder="Teléfono" required>
+        <textarea name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+        <input type="hidden" name="status" value="Nuevo">
+        <button type="submit">Enviar</button>
+        <div class="loader" id="loaderRepartidor"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="rapiflexd-script.js"></script>
+</body>
+</html>
